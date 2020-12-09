@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recyclerView = findViewById(R.id.recyclerView);
-        adapter = new MainAdapter();
+        adapter = new MainAdapter(this);
         recyclerView.setAdapter(adapter);
         list = new ArrayList<>();
         for (int i = 0; i < 40; i++){

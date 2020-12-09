@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Title implements Serializable {
 
     public String name;
-    public String lastName;
+    public String data;
 
     public Title(String name) {
         this.name = name;
@@ -21,11 +21,4 @@ public class Title implements Serializable {
         this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 }
